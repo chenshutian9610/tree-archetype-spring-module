@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<archetype-descriptor name="spring-module-quickstart">
+    <fileSets>
+        <!-- Core -->
+        <fileSet filtered="true" packaged="true">
+            <directory>Core/src/main/java</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+            <excludes>
+                <exclude>**/.gitkeep</exclude>
+            </excludes>
+        </fileSet>
+        <fileSet filtered="true">
+            <directory>Core/src/main/resources</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+            <excludes>
+                <exclude>**/.gitkeep</exclude>
+            </excludes>
+        </fileSet>
+        <fileSet filtered="true">
+            <directory>Core/src/test/java</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+            <excludes>
+                <exclude>**/.gitkeep</exclude>
+            </excludes>
+        </fileSet>
+        <fileSet filtered="true">
+            <directory>Core/src/test/resources</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+            <excludes>
+                <exclude>**/.gitkeep</exclude>
+            </excludes>
+        </fileSet>
+        <!-- Web -->
+        <fileSet filtered="true">
+            <directory>Web/src/main/webapp</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+            <excludes>
+                <exclude>**/.gitkeep</exclude>
+            </excludes>
+        </fileSet>
+        <fileSet filtered="true">
+            <directory>Web/src/main/resources</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+            <excludes>
+                <exclude>**/.gitkeep</exclude>
+            </excludes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true">
+            <directory>Web/src/main/java</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+            <excludes>
+                <exclude>**/.gitkeep</exclude>
+            </excludes>
+        </fileSet>
+        <!-- pom.xml and README.md -->
+        <fileSet filtered="true">
+            <directory>Core</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true">
+            <directory>Web</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory></directory>
+            <includes>
+                <include>README.md</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+    <requiredProperties>
+        <!-- package -->
+        <requiredProperty key="package">
+            <defaultValue>com.tree</defaultValue>
+        </requiredProperty>
+        <!-- dataSource -->
+        <requiredProperty key="jdbc">
+            <defaultValue>mysql</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="database">
+            <defaultValue>testdb</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="username">
+            <defaultValue>root</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="password">
+            <defaultValue>0009</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+</archetype-descriptor>
